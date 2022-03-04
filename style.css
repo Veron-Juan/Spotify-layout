@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+.container{
+    background: rgb(2,0,36);
+    background: linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(144,39,156,1) 35%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    grid-template-rows: repeat(20, auto);
+    grid-template-areas: "aside1 header"
+                        "aside1 header"
+                        "aside1 main_recomended"
+                        "aside1 main_recomended"
+                        "aside1 main_recomended"
+                        "aside1 main_recomended"
+                        "aside1 main_recomended"
+                        "aside1 main_recomended"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "aside1 main_explore"
+                        "footer footer"
+                        "footer footer"
+                        ;
+}
+
+
+
+
+
+.container .container-aside1{
+    background-color: black;
+    grid-area: aside1;
+}
+
+.container .container-footer{
+    background-color: #181818;
+    grid-area: footer;
+}
+
+
+.container-main_recomended{
+    display: grid;
+    gap: 8px;
+    margin-bottom: 50px;
+
+
+}
+
+.container-main_recomended .item{
+    background-color: #2A2A2A;
+    width: 95%;
+    height: 68px;
+    border-radius: 5px;
+    justify-self: center;
+
+}
+
+.container-main_explore{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(15, 1fr);
+    gap: 10px;
+    justify-items: center;
+    
+    
+} 
+
+.cards{
+    background-color:#2A2A2A ;
+    width: 150px;
+    height: 180px;
+    
+
+
+}
