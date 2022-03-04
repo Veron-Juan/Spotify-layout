@@ -8,6 +8,13 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 
 .container{
     background: rgb(2,0,36);
@@ -47,6 +54,9 @@ html{
 .container .container-aside1{
     background-color: black;
     grid-area: aside1;
+    min-width: 120px;
+    max-width: 245px;
+    margin-right: 10px;
 }
 
 .container .container-footer{
@@ -72,21 +82,83 @@ html{
 
 }
 
+
+
+
+    
+
+
 .container-main_explore{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(15, 1fr);
-    gap: 10px;
-    justify-items: center;
+    gap: 8px;
+    justify-items: auto;
+    margin: 10px auto;
     
+    
+
+    
+
     
 } 
 
+
+
+
+.volver{
+    width: 145px;
+    height: 50px;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 950;
+    border: 2px solid green;
+    align-self: flex-end;
+    
+    
+    
+     
+    
+    
+}
+
+.vertodo{
+    width: 145px;
+    height: 50px;
+    color: #2A2A2A;
+    font-size: 1.6rem;
+    font-weight: 900;
+    border: 2px solid green;
+    text-align: end;
+    align-self: flex-end;
+    padding-top: 32px;
+    
+    
+    
+    
+    
+
+    
+    
+     
+    
+}  
+
+
+
 .cards{
+    
     background-color:#2A2A2A ;
-    width: 150px;
-    height: 180px;
+    width: 145px;
+    height: 250px;
+    
+    
+    
     
 
 
 }
+
+
+
+
