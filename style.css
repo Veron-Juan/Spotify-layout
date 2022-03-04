@@ -13,6 +13,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Ubuntu', sans-serif;
+    background-color: #121212;
 }
 
 
@@ -20,10 +21,10 @@ body{
     background: rgb(2,0,36);
     background: linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(144,39,156,1) 35%, rgba(0,212,255,1) 100%);
     width: 100%;
-    height: 100%;
+    height: 500px;
     display: grid;
     grid-template-columns: 1.5fr 3fr;
-    grid-template-rows: repeat(20, auto);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "aside1 header"
                         "aside1 header"
                         "aside1 main_recomended"
@@ -54,21 +55,22 @@ body{
 .container .container-aside1{
     background-color: black;
     grid-area: aside1;
-    min-width: 120px;
+    min-width: 60px;
     max-width: 245px;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .container .container-footer{
-    background-color: #181818;
+    background-color: blue;
     grid-area: footer;
 }
 
 
 .container-main_recomended{
+    grid-area: main_recomended;
     display: grid;
     gap: 8px;
-    margin-bottom: 160px;
+    margin-bottom: 88px;
 
 
 }
@@ -90,8 +92,9 @@ body{
 
 .container-main_explore{
     display: grid;
+    grid-area: main_explore;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-auto-columns: 145px;
     row-gap: 100px;
     justify-items: auto;
@@ -112,10 +115,10 @@ body{
 
 .volver{
     position: absolute;
-    width: 145px;
+    width: 115px;
     height: 50px;
     color: white;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-weight: 950;
     align-self: flex-end;
     top: -58px;
@@ -129,7 +132,7 @@ body{
 
 .vertodo{
     position: absolute;
-    width: 145px;
+    width: 88px;
     height: 50px;
     color: #2A2A2A; 
     
@@ -149,8 +152,8 @@ body{
 .cards{
     
     background-color:#2A2A2A ;
-    width: 145px;
-    height: 250px;
+    width: 85px;
+    height: 180px;
     position: relative;
     
     
