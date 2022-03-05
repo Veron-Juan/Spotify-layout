@@ -58,6 +58,7 @@ body{
     min-width: 60px;
     max-width: 245px;
     margin-right: 6px;
+    
 }
 
 .container .container-footer{
@@ -74,6 +75,8 @@ body{
     display: grid;
     gap: 8px;
     margin-bottom: 88px;
+    margin-right: 7px;
+    max-width: 320px;
 
 
 }
@@ -84,6 +87,7 @@ body{
     height: 68px;
     border-radius: 5px;
     justify-self: center;
+    
 
 }
 
@@ -101,7 +105,8 @@ body{
     grid-auto-columns: 145px;
     row-gap: 100px;
     justify-items: auto;
-    margin: 10px auto;
+    margin: 10px 5px;
+
     
     
     
@@ -170,3 +175,6 @@ body{
 
 
 
+li{
+    color: white;
+}
