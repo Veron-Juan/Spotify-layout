@@ -61,8 +61,11 @@ body{
 }
 
 .container .container-footer{
-    background-color: blue;
+    background-color: #181818;
     grid-area: footer;
+    height: 80px;
+    position: sticky;
+    bottom: 0;
 }
 
 
