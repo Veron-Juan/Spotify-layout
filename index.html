@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:ital,wght@0,100;1,400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73128adacf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+    
     <div class="container">
         <header class="container-header">
             <span>logo</span>
@@ -35,7 +38,7 @@
         </aside>
         <main class="container-main">
             <div class="container-main_recomended">
-                <div class="item">1</div>
+                <div class="item">1 </div>
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
@@ -94,16 +97,50 @@
             </div>
         </main>
         <footer class="container-footer">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <div class="slideContainer">
-                <input type="range" min="1" max="100" value="1" id="myRange" class="slider">
+            <div class="container-pick">
+                <figure class="container-pick_img">
+                    <img src="https://jenesaispop.com/wp-content/uploads/2016/09/weeknd-starboy.jpg" alt="">
+                </figure>
+                <div class="container-text">
+                    <p>Starboy</p>
+                    <p>The weeknd</p>
+                </div>
+                <span><i class="heart fa fa-light fa-heart"></i></span>
+                <span><i class="proh fa fa-solid fa-ban"></i></span>
             </div>
+            
+            <div class="container-music">
+                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
+                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
+                <img class="play" src="./assets/circle-play-solid (2).svg" alt="">
+                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
+                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
+                
+
+                
+            </div>
+            <div class="container-volume">
+                <div class="chrome">
+                    <input type="range" value="50" />
+                </div>
+                    
+                </div>
+                
+            </div>
+            
+
+            
         </footer>
     </div>
+
+    <script>
+        $( '.chrome input' ).on( 'input', function( ) {
+            $( this ).css( 'background', 'linear-gradient(to right, green 0%, green '+this.value +'%, #fff ' + this.value + '%, white 100%)' );
+            } );
+    </script>
+
+    
+    
+
 </body>
 </html>

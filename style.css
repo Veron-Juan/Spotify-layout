@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 *{
     padding: 0;
     margin: 0;
@@ -88,7 +90,137 @@ body{
     height: 80px;
     position: sticky;
     bottom: 0;
+    display: flex;
+    align-items: center;
 }
+
+.container-pick{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    border: 1px solid green;
+    
+}
+
+
+
+.container-pick_img img{
+    width: 36px;
+    height: 36px;
+
+}
+
+
+
+.container-text {
+    color: #b3b3b3;
+    padding: 6px;
+    font-size: .82rem;
+    
+    
+}
+
+
+.container-text :nth-child(1){
+    font-weight: 700;
+}
+.container-text p{
+    padding: 2.3px;
+}
+
+.heart, .proh{
+    width: 20px;
+    height: 15px;
+    color: #b3b3b3;
+}
+
+
+
+
+
+
+
+
+.container-music{
+    border: 1px solid green;
+    width: 96px;
+    height: 42px;
+    margin: 8px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+.left {
+    
+    width: 20px;
+    height: 15px;
+    
+    
+}
+.play{
+    width: 20px;
+    height: 30px;
+    
+    
+    
+}
+
+.container-volume{
+    
+    width: 85px;
+    border: 1px solid green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+	
+}
+
+.chrome input {
+
+    background: linear-gradient(to right, green 0%, green 50%, #fff 50%, #fff 100%);
+    border: solid 1px #00b300;
+    border-radius: 8px;
+    height: 7px;
+    width: 356px;
+    outline: none; 
+    
+    
+    -webkit-appearance: none;
+    }
+    
+    input::-webkit-slider-thumb {
+    background-color: orange;
+    border: solid 12px gold;
+    border-radius: 0;
+        
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container-main_recomended{
@@ -136,7 +268,6 @@ body{
 
     
 } 
-
 
 
 
