@@ -110,21 +110,26 @@
             </div>
             
             <div class="container-music">
-                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
-                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
-                <img class="play" src="./assets/circle-play-solid (2).svg" alt="">
-                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
-                <img class="left" src="./assets/backward-step-solid.svg" alt="left">
+                <img class="icon left" src="./assets/random.png" alt="left">
+                <img class="icon left" src="./assets/step-backward-left.png" alt="left">
+                <img class="icon play" src="./assets/boton-de-play.png" alt="">
+                <img class="icon left" src="./assets/forward.png" alt="left">
+                <img class="icon left" src="./assets/repeat.png" alt="left">
                 
 
                 
             </div>
             <div class="container-volume">
-                <div class="chrome">
-                    <input type="range" value="50" />
-                </div>
-                    
-                </div>
+
+                <img class="icon-v left" src="./assets/volumen-reducido (1).png" alt="">
+                <input class="range" type="range" name=""value="0" min="0" max="100" onchange="rangeSlide(this.value)" onmousemove= rangeSlide(this.value)>
+            </div>
+            <script type="text/javascript">
+                function rangeSlide(value){
+                    document.getElementById('rangeValue').innerHTML = value;
+                    }
+            </script> 
+                
                 
             </div>
             
@@ -133,11 +138,7 @@
         </footer>
     </div>
 
-    <script>
-        $( '.chrome input' ).on( 'input', function( ) {
-            $( this ).css( 'background', 'linear-gradient(to right, green 0%, green '+this.value +'%, #fff ' + this.value + '%, white 100%)' );
-            } );
-    </script>
+    
 
     
     

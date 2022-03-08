@@ -1,4 +1,4 @@
-@import "compass/css3";
+
 
 *{
     padding: 0;
@@ -87,11 +87,12 @@ body{
 .container .container-footer{
     background-color: #181818;
     grid-area: footer;
-    height: 80px;
+    height: 50px;
     position: sticky;
     bottom: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .container-pick{
@@ -100,7 +101,7 @@ body{
     display: flex;
     align-items: center;
     margin-left: 6px;
-    border: 1px solid green;
+    
     
 }
 
@@ -144,13 +145,15 @@ body{
 
 
 .container-music{
-    border: 1px solid green;
-    width: 96px;
+    
+    width: 98px;
     height: 42px;
-    margin: 8px 1px;
+    margin: 8px 4px;
+    margin-left: -2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 40px;
     
     
     
@@ -159,19 +162,23 @@ body{
 }
 
 
-
+.icon{
+    margin: 0 2px;
+}
 
 
 .left {
     
-    width: 20px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     
     
 }
 .play{
-    width: 20px;
+    width: 30px;
     height: 30px;
+    
+    
     
     
     
@@ -179,39 +186,48 @@ body{
 
 .container-volume{
     
-    width: 85px;
-    border: 1px solid green;
+    width: 76px;
+    height: 40px;
+    margin: 0 4px;
     border-radius: 5px;
+    position: relative;
     display: flex;
     align-items: center;
 	
 }
 
-.chrome input {
+.icon-v{
+    margin-right: 5px;
+}
 
-    background: linear-gradient(to right, green 0%, green 50%, #fff 50%, #fff 100%);
-    border: solid 1px #00b300;
-    border-radius: 8px;
-    height: 7px;
-    width: 356px;
-    outline: none; 
-    
-    
+#rangeValue{
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: .6em;
+    color: white;
+}
+
+.range{
+    width: 80px;
+    height: 4px;
     -webkit-appearance: none;
-    }
+    background: #b3b3b3;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0,0,0,1);
     
-    input::-webkit-slider-thumb {
-    background-color: orange;
-    border: solid 12px gold;
-    border-radius: 0;
-        
-    height: 25px;
-    width: 25px;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 8px;
+    height: 20px;
     border-radius: 50%;
-    -webkit-appearance: none;
-    }
-
-
+    background: white;
+    box-shadow: -407px 0 0 400px #1BAE4F;
+}
 
 
 
