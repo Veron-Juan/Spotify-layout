@@ -110,18 +110,25 @@
             </div>
             
             <div class="container-music">
-                <img class="icon left" src="./assets/random.png" alt="left">
-                <img class="icon left" src="./assets/step-backward-left.png" alt="left">
-                <img class="icon play" src="./assets/boton-de-play.png" alt="">
-                <img class="icon left" src="./assets/forward.png" alt="left">
-                <img class="icon left" src="./assets/repeat.png" alt="left">
+                <div class="music-elements">
+                    <img class="icon random" src="./assets/random.png" alt="left">
+                    <img class="icon left" src="./assets/step-backward-left.png" alt="left">
+                    <img class="icon play" src="./assets/boton-de-play.png" alt="">
+                    <img class="icon right" src="./assets/forward.png" alt="left">
+                    <img class="icon repeat" src="./assets/repeat.png" alt="left">
+                </div>
+                <div class="barra barra-music">
+
+                    <input class="range" type="range" name=""value="0" min="0" max="100" onchange="rangeSlide(this.value)" onmousemove= rangeSlide(this.value)>
+                </div>
+                
                 
 
                 
             </div>
             <div class="container-volume">
 
-                <img class="icon-v left" src="./assets/volumen-reducido (1).png" alt="">
+                <img class="icon-v volume" src="./assets/low-volume (1).png" alt="">
                 <input class="range" type="range" name=""value="0" min="0" max="100" onchange="rangeSlide(this.value)" onmousemove= rangeSlide(this.value)>
             </div>
             <script type="text/javascript">
